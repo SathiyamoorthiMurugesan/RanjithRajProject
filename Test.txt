@@ -1,0 +1,9 @@
+1. how to link eclipse and Git
+2. project create in git
+3. How to move local project into git
+4. How to move git project into local
+	1) what if git project has .project and .classpath files in it
+	2) if .project and .classpath files are not there
+5. How to switch branches using eclipse
+6. How to push codes from eclipse to git through eclipse(E-Git)
+7. How to pull code from Git to local
