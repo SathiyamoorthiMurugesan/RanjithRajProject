@@ -1,6 +1,6 @@
 package day4ObjectCreation;
 
-public class Practice1 {
+public class Practice1 extends Object{
 	
 //	Practice1 obj1 = new Practice1();
 	
