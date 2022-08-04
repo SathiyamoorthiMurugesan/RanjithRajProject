@@ -1,6 +1,8 @@
 package interfaceInJava;
 
-public class TestClass implements Interface2 {
+import constructor.TestConstructor;
+
+public class TestClass extends TestConstructor implements Interface2 {
 
 	public static void main(String[] args) {
 		LearnInterface obj1 = new TestClass();
@@ -8,6 +10,8 @@ public class TestClass implements Interface2 {
 		TestClass obj3 = new TestClass();
 		obj3.rule3();
 		obj1.rule3();
+		
+//		TestConstructor test = new TestConstructor();
 	}
 
 	@Override
