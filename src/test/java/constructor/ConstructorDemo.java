@@ -31,11 +31,11 @@
 		
 
 //* How to call one constructor from another?
-//		* We can call one contructor from another constructor when inheritance concept is applicable.
+//		* We can call one constructor from another constructor when inheritance concept is applicable.
 //		* As we know when we create class, default constructor is always created and it is implicit in nature.
-//		* So, when we create object for child class, firstly, child class default contrcutor will be called, but within child class constryctor, super() is implicitly present,
+//		* So, when we create object for child class, firstly, child class default constructor will be called, but within child class constryctor, super() is implicitly present,
 //			and it will call parent class's default constructor. 
-//		* Event if we create parameterized object for child class, parameterized child class constryuctor will always run parent class's default constructor and executes the 
+//		* Event if we create parameterized object for child class, parameterized child class constructor will always run parent class's default constructor and executes the 
 //			child class's parameterized constructors content.
 //		* If we want to run parent class parameterized constructor by creating parameterized child class object, then, we need to put super(parameter) in child class's construtor
 //		* We can overload a constructor.

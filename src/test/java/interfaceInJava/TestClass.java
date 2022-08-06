@@ -1,8 +1,6 @@
 package interfaceInJava;
 
-import constructor.TestConstructor;
-
-public class TestClass extends TestConstructor implements Interface2 {
+public class TestClass  implements Interface2 {
 
 	public static void main(String[] args) {
 		LearnInterface obj1 = new TestClass();

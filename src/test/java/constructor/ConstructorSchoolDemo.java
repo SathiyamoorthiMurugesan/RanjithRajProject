@@ -36,7 +36,7 @@ public class ConstructorSchoolDemo {
 		
 //		ConstructorSchoolDemo studentNew1 = new ConstructorSchoolDemo("1", "A", "10");
 		
-		ConstructorSchoolDemo studentNew1 = new ConstructorSchoolDemo("1", "A");
+//		ConstructorSchoolDemo studentNew1 = new ConstructorSchoolDemo("1", "A");
 		
 	}
 }

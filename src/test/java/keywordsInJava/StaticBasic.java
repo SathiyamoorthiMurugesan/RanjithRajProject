@@ -6,7 +6,7 @@ public class StaticBasic {
 //		* It can be used with both methods and variables
 //		* static variables and methods are belongs to class
 //		* This means, we don't need to create Object of an class to access static methods and variables inside a class
-//		* In order to use the static variables and methods inside of a class, we can simply call the varible and method names.
+//		* In order to use the static variables and methods inside of a class, we can simply call the variable and method names.
 //		* In order to use the static variables and methods outside of a class, we need to access it using it's respective Class Name
 //		* static will be stored in heap memory
 //		* we can not declare static variable inside a static or non static method 
