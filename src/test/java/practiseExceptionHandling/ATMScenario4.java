@@ -7,7 +7,6 @@ import javax.security.auth.RefreshFailedException;
 
 public class ATMScenario4 extends Exception {
 
-
 	/**
 	 * 
 	 */
@@ -17,11 +16,12 @@ public class ATMScenario4 extends Exception {
 		try {
 			System.out.println("			*****Welcome to HDFC ATM*****	");
 			throw new RefreshFailedException("ATM out of service try our nearest ATM for service");
-		} catch (RefreshFailedException r) {
-			System.out.println(r.getMessage());
-			System.out.println("Sorry for the inconvinence");
 		}
-		catch (Exception e) {
+//			throw new RefreshFailedException();
+		catch (RefreshFailedException r) {
+			System.out.println(r.getMessage() + "*********");
+			System.out.println("Sorry for the inconvinence");
+		} catch (Exception e) {
 
 			System.out.println(e.getMessage());
 			System.out.println("I am main class exception");
@@ -35,12 +35,10 @@ public class ATMScenario4 extends Exception {
 		try {
 			System.out.println("Trying in next Active ATM Machine and entering the pin");
 			throw new MalformedParameterizedTypeException("Pin cannot have all values as zero's");
-		}
-		catch (MalformedParameterizedTypeException m) {
+		} catch (MalformedParameterizedTypeException m) {
 			System.out.println(m.getMessage());
 
-		} 
-		catch (Exception e) {
+		} catch (Exception e) {
 
 			System.out.println(e.getMessage());
 //			System.out.println(e.getLocalizedMessage());
@@ -50,12 +48,12 @@ public class ATMScenario4 extends Exception {
 		}
 	}
 
-	public static void main(String[] args)  {
-		
+	public static void main(String[] args) {
+
 		InvalidTransaction();
 		System.out.println("************");
 		System.out.println("Entered valid pin and transaction in process");
 		System.out.println("Transaction success. Please collect your cash");
-		
+
 	}
 }

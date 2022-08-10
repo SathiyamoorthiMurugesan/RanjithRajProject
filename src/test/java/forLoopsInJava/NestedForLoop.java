@@ -1,4 +1,4 @@
-package loopsInJava;
+package forLoopsInJava;
 
 public class NestedForLoop {
 

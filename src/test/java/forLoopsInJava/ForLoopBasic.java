@@ -1,4 +1,4 @@
-package loopsInJava;
+package forLoopsInJava;
 
 //for(initialize; condition; increment/decrement) {
 //}
