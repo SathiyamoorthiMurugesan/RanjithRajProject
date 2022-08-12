@@ -1,5 +1,6 @@
 package array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringArrayPratice {
@@ -69,8 +70,8 @@ public class StringArrayPratice {
 		else {
 			int z=0;
 			for(int i = 0;i < x.length;i++) {
-				for(int j = 0;j < y.length;j++) {
-					if(x[i].equalsIgnoreCase(y[j])) {
+				for(int j = 0; j < y.length; j++) {
+					if(x[i].equalsIgnoreCase(y[i])) {
 						z++;
 						break;
 					}
@@ -92,5 +93,4 @@ public class StringArrayPratice {
 //		sortArray(printArray(getArray()));
         compareTwoArray(getArray(),getSecondArray());
 	}
-
 }

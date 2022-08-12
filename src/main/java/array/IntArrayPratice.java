@@ -1,5 +1,6 @@
 package array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class IntArrayPratice {
@@ -62,21 +63,18 @@ public class IntArrayPratice {
 		return e;
 	}
 	
-	public static void compareTwoArray(int[] x,int[]y) {
-		if(x.length != y.length) {
+	public static void compareTwoArray(int[] m, int[] n) {
+		if(m.length != n.length) {
 			System.out.println("The size of an two arrays are not same.");
 		}
 		else {
-			int z=0;
-			for(int i = 0;i < x.length;i++) {
-				for(int j = 0;j < y.length;j++) {
-					if(x[i] == y[j]) {
+			int z=0;		
+			for(int i = 0;i < m.length;i++) {
+					if(m[i] == n[i]) {
 						z++;
-						break;
 					}
-				}
 			}
-			if(z == x.length) {
+			if(z == m.length) {
 				System.out.println("Two arrays are Same");
 			}
 			else {
@@ -90,7 +88,7 @@ public class IntArrayPratice {
 //        printArray(getArray());
 //        reverseArray(printArray(getArray()));
 //		sortArray(printArray(getArray()));
-		compareTwoArray(getArray(), getSecondArray());
+		compareTwoArray(sortArray(getArray()), sortArray(getSecondArray()));
 	}
 
 }
