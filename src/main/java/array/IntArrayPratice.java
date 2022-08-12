@@ -49,7 +49,7 @@ public class IntArrayPratice {
 	public static int[] sortArray(int[] e) {
 		int f;
 		System.out.println();
-		System.out.print("The sort array are: ");
+//		System.out.print("The sort array are: ");
 		for(int i = 0;i<e.length;i++) {
 			for(int j = i;j<e.length;j++){
 				if(e[i]>e[j]) {
@@ -58,8 +58,9 @@ public class IntArrayPratice {
 					e[j] = f;
 				}
 			}
-		System.out.print(e[i]+" ");
+//		System.out.print(e[i]+" ");
 	    }
+		System.out.println();
 		return e;
 	}
 	
@@ -68,6 +69,7 @@ public class IntArrayPratice {
 			System.out.println("The size of an two arrays are not same.");
 		}
 		else {
+			System.out.println("Two array length are same");
 			int z=0;		
 			for(int i = 0;i < m.length;i++) {
 					if(m[i] == n[i]) {
