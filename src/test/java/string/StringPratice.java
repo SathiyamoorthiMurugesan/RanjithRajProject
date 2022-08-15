@@ -148,18 +148,69 @@ public class StringPratice {
 		System.out.println("****Split****");
 		String[] b = a.split(" ");
 		int x = b.length;
-		String[] z = new String[x];
-		for(int i = 0;i < x; i++) {
-			z[i] = b[i];
-			System.out.print(z[i]+" ");
+		for(int i = 0; i< x;i++) {
+			System.out.print(b[i]+" ");
 		}
 		System.out.println();
-		return z[5];
+		return b[5];
 	}
 	
 	public static String getJoin(String a) {
-		String b = "Both are Students";
-		return a.join(b, 5);
+		System.out.println("****Join****");		
+		String[] b = a.split(" ");
+		String c = String.join("*", b);
+		return c;
+	}
+	
+	public static String getUpperCase(String a) {
+		System.out.println("****UpperClass****");
+		String b = a.toUpperCase();
+		return b;
+	}
+	
+	public static String getLowerCase() {
+		System.out.println("****LowerClass****");
+		String a = "NAVARANJITH";
+		String b = a.toLowerCase();
+		return b;
+	}
+	
+	public static String getTrim() {
+		System.out.println("****Trim****");
+		String a = "   They are going to play football   ";
+		String b = a.trim();
+		return b;
+	}
+	
+	public static String getStrip() {
+		System.out.println("****Strip****");
+		String a = "   They are going to play football    ";
+		String b = a.strip();
+		String c = a.stripLeading();
+		String d = a.stripTrailing();
+		String e = a.stripIndent();
+		System.out.println(b);
+		System.out.println(c);
+		return d;
+	}
+	
+	public static boolean getIsBlank() {
+		System.out.println("****Blank****");
+		String a = " ";
+		String b = "";
+		String c = "Navaranjith";
+		System.out.println(a.isBlank());
+		System.out.println(a.isEmpty());
+		System.out.println(b.isBlank());
+		System.out.println(b.isEmpty());
+		System.out.println(c.isBlank());
+		return c.isEmpty();
+	}
+	
+	public static String getToString() {
+		System.out.println("****toString****");
+		int[] a = {10,50,20,30};
+		return a.toString();
 	}
 
 	public static void main(String[] args) {
@@ -191,6 +242,12 @@ public class StringPratice {
 		System.out.println(checkContains(s3));
 		System.out.println(getSplit(s3));
 		System.out.println(getJoin(s3));
+		System.out.println(getUpperCase(str1));
+		System.out.println(getLowerCase());
+		System.out.println(getTrim());
+		System.out.println(getStrip());
+		System.out.println(getIsBlank());
+		System.out.println(getToString());
 	}
 
 }
