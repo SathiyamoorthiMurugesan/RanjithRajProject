@@ -816,9 +816,9 @@ compare two array
 
 Arrays class
 
+*****************************************************************
 
-
-
+DAY 18
 
 String sen = ""; 
 
@@ -828,6 +828,21 @@ for(String eachWord: each) {
 if(eachWord.equals("sathya") {
 
 }
+
+String can be 
+
+String str = "text";
+String str = "";
+Strinh str = "    ";
+
+*********************************************************************
+
+DAY 19
+
+String str = "You can use the git reset --merge command. You can also use the git merge --abort command. As always, make sure you have no uncommitted changes before you start a merge";
+
+String[] allWords = str.split(" ");
+
 
 
 
