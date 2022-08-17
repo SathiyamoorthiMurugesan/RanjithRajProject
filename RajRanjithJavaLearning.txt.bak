@@ -1,0 +1,870 @@
+
+DAY 1
+Taluk office - income, caste, etc ( Erode People management) - Class (Set of work)
+
+income room 
+caste room - methods (specific work, 
+
+Taluk office (Sathyamanagalam) - Erode follow - Sub class
+
+10th student certificate camp(Erode Taluk) - 
+	Mark sheet, TC, income, caste - Object creation (Class)
+	
+	ErodeTaluk 10thCertificateCamp = new ErodeTaluk();
+	GovtHospital eyeCamp = new GovtHospital();
+	
+Clerk - Constructor
+
+Taluk office - System, chair, telephone, cell phone, newspaper, water, reception, tables, people, rooms( table, chair, water, people, telephone, cellphone)
+
+Erode taluk office reception, reception chair, reception person, reception phone, officer - static items
+water, newspaper - public item
+
+Rules - interface (rules)
+
+TamilNadu People Admin ( Project)
+Package - 
+	Peoeple Management (Erode Taluk, Chennai Taluk, etc...)
+	People Health Management (Erode Govt hos, 
+	Law managerment ( Erode high court, 
+	Police 
+	
+	
+1) General explanation about Java 
+2) Class, variables, methods, package and project
+
+*********************************************************************************************************************
+
+DAY 2
+
+Class - important thing, through which we perform some task. Class may contains methods and variables
+
+Method1 - A work
+Method2 - B work
+Method1 + method3 - C work ( A work + continuation)
+
+Variables - shape and count
+shape - datatype 
+
+
+int a = 10; 
+String a = "10";
+double a = 10d;
+
+int a; - declare
+a =10; - define
+
+Variables - Its a memory location that can hold values of a specific datatype.
+
+Types of variables 
+1. Local variable - 
+	* defines within a block ({   })/method/constructor
+	* scope of local variable is only within the block in which the variable is declared
+	* intialization of local variable is madatory
+	* local variables can not be static
+	
+	int a = 10;
+	String sathya = "10";
+	
+2. Instance variable/class variable
+	* Declared within a class but outside of a method
+	* Non- static variables
+	* To access instance variables, we need to create object
+	
+	int a = 10;
+	String sathya = "10";
+	
+	
+3. Static variable
+	* Declared within a class but outside fo a method
+	* static keyword is used with variables
+	* To access this variable, dont need to create an object
+	
+	static int a = 10;
+	static String sathya = "10";
+	
+	
+Datatype: Its a clasification of a data, which tells the compiler or interpretor about how the programmer intends to use the data.
+
+1) Primitive
+	a) boolean - yes or no
+	b) Textual 
+		char - a, b, c, A, B
+		byte - 
+	c) numeric 
+		int 
+		short
+		double
+		long
+		float
+
+2) Non Primitive
+	d) String 
+	e) array
+	
+* default value of String is null
+* default value of int is 0
+
+
+Access Modifier
+	* It defines where and who can use a method/variable/class
+	1) default
+	2) private
+	3) protected
+	4) public 
+	
+	int a = 10; - default (no need to mention "default" word
+	private int a = 10;
+	protected int a = 10;
+	public int a = 10;
+	
+
+                                     | default |  private  | protected  | public 
+									 |         |           |            | 
+same class                           | yes     | yes       | yes        | yes
+									 |         |           |            |
+same package but sub class           | yes     | no        | yes        | yes
+									 |         |           |            |
+same package but non sub class       | yes     | no        | yes        | yes
+									 |         |           |            |
+different package but sub class      | no      | no        | yes        | yes
+									 |         |           |            |
+different package but non sub class  | no      | no        | no         | yes
+
+
+JVM, JRE, JDK
+
+our codes - english - .java
+compile - .class - byte code (machine recognizable language)
+
+
+JVM - Java Virtual Machine 
+* This can not be seen
+* It first checks for main method
+* It creates the code flow, in java the flow is called "Thread" 
+* JVM provides run time environment in which Java byte codes can be executed
+* loads code| verifies code| execute code| provides run time environment
+
+JRE - Java Runtime Environment
+* Physically exist
+* Contains JVM and set of libraries
+* JVM uses these libraries to execute the codes
+
+JDK - Java Developement kit
+* It contains JVM, set of libraries and dev tools (JRE + dev tools)
+* Used to develop and execute the codes
+* Dev tools + debugger + compiler + java doc
+
+**********************************************************************************************	
+DAY 3
+
+Project - What are we trying to achieve 
+
+
+Package - Consist of Classes, Interfaces and files
+
+Eclipe/IntelJ/STS(SpringToolSuite):
+* Its a Editor
+* It help us to easily create a project, edit file, gives us proper look
+* Perspective 
+	Few of the perspectives in Eclipse
+	* Java
+	* Debug
+	* Git
+	
+Dependency Management
+* Maven - pom.xml
+* Gradle - gradle.build
+
+How to create a project
+* Java project
+* Maven project
+
+***********************************************************************************************
+
+DAY 4
+
+Object creation
+
+1) In order to access non static members of a class, we create object and access the methods and variables
+
+
+Memory Management
+
+Heap memory
+Stack memory
+SCP (String Constant Pool)
+
+ClassA obj1 = new ClassA();
+
+ClassA - Class Name
+Obj1 - Object Name 
+new = key word to create obj
+ClassA() - Constructor or Object creation or instance creation
+
+* Whenever we create object for a class, whatever non-static variables and methods present in that class will be copied to heap memory
+* Object varibale or instance variable, is stored in stack memory 
+
+
+	stack memory			HEap me
+	obj1				a = 10; method1();
+	obj2				a = 10; method1();
+	obj3				a = 10; method1(); 
+	obj1ClassB			non static members 
+	
+int a = 10;
+* a = 10 - it will be stored in stack memory
+
+String Sathya = "1000"; String Literals
+String Sathya = new String("1000"); Object creation
+
+Sathya - Stack
+1000 - SCP of Heap memory
+
+String str = "Sathya";
+String str1 = "Sathya";
+String str2 = "Ranjith";
+
+stack 		SCP
+str			"Sathya" - 
+str1 		
+str2 		Ranjith
+
+
+str1 = str1 + str2;
+str1 = SathyaRanjith
+
+str - Sathya - SathyaRanjith
+
+
+stack 		SCP
+str			"Sathya" - 
+str1 		SathyaRanjith
+str2 		Ranjith
+
+str1 = str1+"abc"
+
+stack 		SCP
+str			"Sathya" - 
+str1 		SathyaRanjithabc
+str2 		Ranjith
+			SathyaRanjith
+
+Immutable concept 
+* It happens with String literals
+
+
+
+String Sathya = "1000"; String Literals
+String Sathya1 = new String("1000"); Object creation
+
+Methods in Java
+1) method without return type
+2) method with return type
+3) static method
+4) non static method
+5) parameterized method
+6) Non parameterized method
+
+
+***************************************************************************************
+DAY 5
+
+int a = 10; 
+
+* access modifer is default
+* It would be local or instance variable
+* datatype is int
+* This is stored in stack memory
+* Non-static
+* We need to create object to access this method
+
+What is static
+How we can access static variable inside or outside a class
+
+
+
+Non-static
+
+
+
+
+*********************************************
+DAY 6
+
+GIT
+
+
+***********************
+
+DAY 7
+
+git install
+
+
+*******************************************
+
+DAY 8
+
+Methods break out: 
+
+public void method1() {} 
+
+* public access modifier
+* non-static method 
+* return type is none (void)
+* method signature - method name (method1) and no parameters 
+
+String Basics:
+
+* Sequence of character (Basic Explanation)
+* In Java, It is array of character and it is Class
+* Why it is class, because we can perform many operations on String
+* if my String is "Sathya", length - 6, length starts with 0.
+
+How do we define String
+
+String str = "Raj"; - Literals 
+String str1 = new String("Ranjith"); - Instance or object creation
+
+
+Rules for class 
+* Class name should start with Cap letter
+* Variables, constructors and methods - sequence
+
+private final byte[] value;
+private final int a;
+
+
+Interface in Java
+
+* 
+
+Linking in java (Inheritance)
+Interface wants to follow interface - extends 
+Interface to Class - No possible
+Class to Class - extends
+Class to Interface - implements
+
+git@github.com:SathiyamoorthiMurugesan/RanjithRajProject.git
+
+
+*******************************************************************************************
+
+DAY 9:
+
+Interface
+	* Type of creating rules by creating abstract method (without body)
+	* RBI Interface - homeLoan() and personalLoan() - abstract methods
+	* SBI Class implements RBI Interface - homeLoan() {....} and personalLoan() {....}
+	* Inorder to regularize homeLoan(), we need to implement it. We cant implement normal methods in Interface
+	* To fix these problem, java came up with abstract
+	
+public interface Demo1 {
+
+public void method1();
+
+public void method2();
+
+
+Demo1 obj = new Demo1();
+obj.method1();
+
+
+}
+
+
+* can we create variables/methods with different access modifiers in abstract class
+* can we create static methods in abstract class
+
+
+
+OOPs concept in Java
+
+Object oriented program 
+
+Java is not 100% OOP language
+
+Objects are nothing but it should have a name/size and it should perform some work
+dataTypes are not Objects.
+
+
+OOPs Concepts in Java
+
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+
+VARIABLES
+ACCESS MODIFIERS
+METHODS - parameters or return type
+STATIC
+
+
+1) push your changes into your branches
+2) create merge request (master to your branch)
+3) once request is approved, pull your   branch codes
+
+*************************************************************************************
+
+Day 10
+
+Inheritance in java
+
+reuse of code - important 
+
+
+public void goingToCbe() {}
+public void goingToChennai() {}
+
+public void buyTicketToCbe() {}
+public void buyTicketToChennai() {}
+
+public void getDownInCbe() {}
+public void getDownInChennai()
+
+public void goingToACity(String cityName) {}
+public void buyToACity(String cityName) {}
+public void getDownAtACity(String cityName) {}
+
+
+* important concept  in OOPs is inheritance
+* using property of a parent class in child class is called inheritance
+* Parent class/super class
+* child class/ subordinate class/sub class
+* keyword - extends, implements
+* Is multiple inheritance or multilevel inheritance possible? 
+
+ClassName objName = new ClassName(); 
+
+ClassName - reference Class
+objName - Object variable Name
+new - keyword
+ClassName() - Constructor, Object
+
+By using inheritance, we can create 4? types of objects (Only 3 is allowed)
+
+Class1 - parentClass
+class2 - childClass
+
+parentClass obj1 = new parentClass();
+childClass obj2 = new childClass();
+parentClass obj3 = new childClass();
+childClass obj4 = new parentClass(); - not possible
+
+Multiple
+public class Test1 extends Test2, Test3; - In Java This is not possible
+public interface abc1 extends abc2, abc3; - In Java this is possible
+public class Test1 extends Test2 implements abc1, abc2; POSSIBLE
+public class Test1 extends Test2, Test3 implements abc1, abc2; NOT POSSIBLE
+public class Test1 implements abc1, abc2; POSSIBLE
+Public class Test1 implements abc1, abc2 extends Test2; NOT POSSIBLE
+
+
+pu
+
+Multilevel
+public class Test1 extends Test2
+public class Test2 extends Test3
+
+
+Test1 obj1 = new Test1();
+obj1.
+
+******************************************************************************
+
+DAY 11
+
+Polymorphism
+
+One thing available in different format.
+
+1) Method signature - Method name and parameter. 
+2) Object creation
+
+Inheritance concept
+
+Two polymorphism - Overloading, overriding 
+
+OverLoading 
+* It happens within a class 
+* Method name should be same and parameters should vary
+
+Overriding
+* It happens between two classes (Parent and child class) - Inheritance concept
+* Method name should be same and parameter also should be same
+
+
+*************************************************************************  
+
+DAY 12
+
+Override in Java
+
+buySoap(String soapName) {
+syso(" buy Lux soap)
+
+ }
+
+buySoap(int soapName)   {
+syso("buy hamam soap  }
+
+Constructor in java
+
+test() {
+}
+
+
+Method syntax
+accessModifier static/non-static returnType methodName(with/without parameter) {
+....
+}
+
+Constructor Syntax
+accessModifier NameIsClassName(with/without parameter) {
+....
+}
+
+**************************************************************************************
+
+DAY 13
+
+Constructor continuation 
+
+public class Test {
+
+Inheritance --- 
+
+1) Variables
+2) Constructors
+3) Methods  
+
+
+private final byte[] value;
+private final int a;
+
+
+private static final ObjectStreamField[] serialPersistentFields = new ObjectStreamField[0];
+default ClassName name = new ClassName();
+ClassName name = new ClassName();
+
+isEmpty() 
+Returns  true} if, and only if, { #length()} is { 0}.
+
+*************************************************************************************
+
+DAY 14
+
+Keywords in Java
+
+static
+this
+super
+final
+
+* within a class, 
+	1) we can simply call static method from another static method (this keyword is applied implicitly)
+	2) We can simply call non-static method from another non-static method (this keyword is applied implicitly)
+	3) We need to create object to call a non-static method from a static method
+	4) We can simply call static method from non-static method (this keyword is applied implicitly)
+
+
+
+
+
+int amount = 10;
+
+public void method1() {
+int amount1 = 100;
+
+this.amount = amount1;
+//amount = 100;
+
+amount1 = this.amount;
+amount1 = 100;
+
+syso(amount);
+syso(amount1);
+
+
+
+constructor() {
+this();
+}
+
+constructor2() {
+
+}
+
+constructor3()
+
+constructor4()
+
+constructor test = new constructor();
+
+static block
+
+*********************************************************************************
+
+DAY 15
+
+Errors and Exceptions
+
+Error - Fix then execution
+
+Exception - We look for somethings, in case if it wont happens, we should be having other plans
+
+Facebook login 
+
+user id and/or password is/are wrong - Error
+user id and/or password is/are forgot - Exception 
+
+Code write
+compile - if no error
+Execution
+
+write/compile
+Execution
+
+try block can not be alone
+finally block can not be alone
+if we want to use try block, it should be followed by either catch or finally block or both
+we can have multiple catch blocks
+
+
+Throw, Throws and Throwable
+
+
+"Sathya"+variableName
+
+"Sathiy"a"moorthi"
+
+
+String str = "Processing "SQL" Statements with JDBC";
+
+String str1 = "Processing \"SQL\" Statements with JDBC";
+
+
+"Str"+"Str"
+
+
+***************************************************************************************
+
+DAY 16
+
+FOR LOOP
+
+* In order to do a single work multiple times, we go for loops
+
+for(initialize; condition; increment/decrement) {
+}
+
+for(initialize; condition) {
+increment/decrement;
+}
+
+
+for() {
+
+}
+
+Maruthi - Baleno, 800, k10...
+Cricket  - t10, t20, odi, test
+
+for(format eachCric : Cricket) {
+syso(eachCric);
+
+for(car eachCar : Honda) {
+syso(eachCar);
+
+for(bike eachBike : Honda) {
+syso(eachBike);
+
+
+*****
+****
+***
+
+************************************************************************************
+
+DAY 17 
+
+    5
+   45
+  345
+ 2345
+12345
+
+for(int i =1;i<=5;i++){
+for (int j=1; j>=5;j++){
+int a = 5-i;
+if(a > j)
+System.out.print(j);
+else
+System.out.print(" ");
+
+}
+System.out.println();
+}
+
+Output:
+54321
+5432
+543
+54
+5
+
+
+for(int i=5;i>=1;i--) {
+for(int j=1;j<=5;j++) {
+if(j<i)
+print("*");
+if(j>=i)
+print(j);
+}
+println();
+
+****5
+***45
+**345
+*2345
+12345
+
+
+****5
+***44
+**333
+*2222
+ 
+If loop 
+
+if(condition) {
+pgm1
+pgm2
+}
+
+if(condition)
+pgm1
+pgm2
+
+1) single if
+2) if else 
+3) if, else if, else if, else
+4) if, if, if
+5) if(condition1 || condition2 || condition3) 
+6) if(condition1&&condition2&&condition3)
+7) if (condition1)
+	if (condition2)
+		syso
+
+Switch case
+
+switch(condition)
+
+case: value1
+	content
+case: value2
+	content
+	
+
+***********************************************************************************************
+
+array - Arrays
+
+int a = 1;
+int b = 2;
+int c = 10;
+
+same kind of data type 
+size fixed
+
+
+int array1[] = new int[5];
+int[] array2 = new int[5];
+int array3[] = {1, 2, 3, 4, 5};
+int[] array4 = {1, 2, 3, 4, 5};
+int[] array5 = new int[] {11, 22, 33};
+array5[index];
+
+
+
+Scanner scan = new Scanner(System.in);
+System.out.println("Please enter int array size: ");
+
+arrayS = scan.nextInt();
+
+syso("Please enter " +arrayS+ " numbers");
+
+int arr[] = new int[3];
+
+arr[0] = scan.nextInt();
+arr[1] = scan.nextInt();
+arr[2] = scan.nextInt();
+
+for(int i=0;i<arrayS;i++) {
+	arr[i] = scan.nextInt();
+}
+
+get an array
+print Array 
+reverse an array
+sort an array  
+duplicate an array 
+compare two array
+
+Arrays class
+
+*****************************************************************
+
+DAY 18
+
+String sen = ""; 
+
+String[] each = sen.split(" ");
+
+for(String eachWord: each) {
+if(eachWord.equals("sathya") {
+
+}
+
+String can be 
+
+String str = "text";
+String str = "";
+Strinh str = "    ";
+
+*********************************************************************
+
+DAY 19
+
+String str = "You can use the git reset --merge command. You can also use the git merge --abort command. As always, make sure you have no uncommitted changes before you start a merge";
+
+String[] allWords = str.split(" ");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
