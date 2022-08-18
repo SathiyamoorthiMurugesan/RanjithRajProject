@@ -6,7 +6,7 @@ public class StringPratice {
 	
 
 
-	public static int getLength(String a) {
+	public static int getLengthOfaString(String a) {
 		System.out.println("****LENGHT****");
 		int x = a.length(); 
 		return x;
@@ -24,7 +24,7 @@ public class StringPratice {
 		return x;
 	}
 	
-	public static boolean checkStringEquals(String a, String b) {
+	public static boolean checkTwoStringEquals(String a, String b) {
 		System.out.println("****Equals****");
 		return a.equals(b);
 	}
@@ -34,12 +34,12 @@ public class StringPratice {
 		return a.equalsIgnoreCase(b);
 	}
 	
-	public static boolean checkContentEquals(String a, String b) {
+	public static boolean checkTwoStringContentEquals(String a, String b) {
 		System.out.println("****ContentEquals****");
 		return a.contentEquals(b);
 	}
 	
-	public static int checkCompareTo() {
+	public static int CompareTwoString() {
 		String s1 = "He is a Navaranjith";
 		String s2 = "he is a Navaranjith";
 		String s3 = "Me is a Navaranjith";
@@ -130,7 +130,7 @@ public class StringPratice {
 		return a.replace("boy", "cricketer.");
 	}
 	
-	public static boolean checkMatches(String a) {
+	public static boolean checkMatchesOfaString(String a) {
 		System.out.println("****Matches****");
 		String b = "Navaranjith";
 		return a.matches(b);
@@ -155,20 +155,20 @@ public class StringPratice {
 		return b[5];
 	}
 	
-	public static String getJoin(String a) {
+	public static String joinTwoString(String a) {
 		System.out.println("****Join****");		
 		String[] b = a.split(" ");
 		String c = String.join("*", b);
 		return c;
 	}
 	
-	public static String getUpperCase(String a) {
+	public static String changeStringToUppercase(String a) {
 		System.out.println("****UpperClass****");
 		String b = a.toUpperCase();
 		return b;
 	}
 	
-	public static String getLowerCase() {
+	public static String changeStringToLowercase() {
 		System.out.println("****LowerClass****");
 		String a = "NAVARANJITH";
 		String b = a.toLowerCase();
@@ -207,10 +207,10 @@ public class StringPratice {
 		return c.isEmpty();
 	}
 	
-	public static String getToString() {
+	public static void getToString() {
 		System.out.println("****toString****");
 		int[] a = {10,50,20,30};
-		return a.toString();
+		System.out.println(a.toString());
 	}
 
 	public static void main(String[] args) {
@@ -221,13 +221,13 @@ public class StringPratice {
 		String s2 = "d";
 		String s3 = "She is a girl and he is a boy.";
 		
-		System.out.println(getLength(str));
+		System.out.println(getLengthOfaString(str));
 		System.out.println(checkStringIsEmpty(str));
 		System.out.println(getCharAt(str));
-		System.out.println(checkStringEquals(str,str1));
+		System.out.println(checkTwoStringEquals(str,str1));
 		System.out.println(checkStringEqualsIgnoreCae(str,str1));
-		System.out.println(checkContentEquals(str,str1));
-		System.out.println(checkCompareTo());
+		System.out.println(checkTwoStringContentEquals(str,str1));
+		System.out.println(CompareTwoString());
 		System.out.println(checkCompareToIgnoreCase());
 		System.out.println(getStartWith(str,s));
 		System.out.println(getEndWith(str,s1));
@@ -238,16 +238,16 @@ public class StringPratice {
 		System.out.println(getSubSequence(s3));
 		System.out.println(getConcatString(str));
 		System.out.println(getReplaceChar(s3));
-		System.out.println(checkMatches(str));
+		System.out.println(checkMatchesOfaString(str));
 		System.out.println(checkContains(s3));
 		System.out.println(getSplit(s3));
-		System.out.println(getJoin(s3));
-		System.out.println(getUpperCase(str1));
-		System.out.println(getLowerCase());
+		System.out.println(joinTwoString(s3));
+		System.out.println(changeStringToUppercase(str1));
+		System.out.println(changeStringToLowercase());
 		System.out.println(getTrim());
 		System.out.println(getStrip());
 		System.out.println(getIsBlank());
-		System.out.println(getToString());
+		getToString();
 	}
 
 }
