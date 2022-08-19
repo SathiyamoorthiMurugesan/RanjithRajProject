@@ -47,6 +47,7 @@ public class ArrayListPratice {
 		newcarlist.add("Tata");
 		newcarlist.add("Lambo");
 		newcarlist.add("BMW");
+		newcarlist.add(1);
 		System.out.println("*******Checks Given Values present in car List*******");
 		System.out.println(carlist);
 		System.out.println(newcarlist);
@@ -62,6 +63,10 @@ public class ArrayListPratice {
 		System.out.println(d);
 		boolean e = carlist.equals(newcarlist);
 		System.out.println(e);
+		newcarlist.addAll(carlist);
+		System.out.println(newcarlist);
+		System.out.println(carlist.addAll(newcarlist));
+		
 		
 	}
 

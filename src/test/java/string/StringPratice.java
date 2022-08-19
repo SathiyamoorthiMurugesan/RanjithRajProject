@@ -110,6 +110,14 @@ public class StringPratice {
 		return a.substring(2, 10);
 	}
 	
+	public String createSubString(String string, int size) {
+		return string.substring(size);
+	}
+	
+	public void createSubString(String string, int fromSize, int toSize) {
+		string.substring(fromSize, toSize);
+	}
+	
 	public static CharSequence getSubSequence(String a) {
 		System.out.println("****SubSequence****");
 		CharSequence b = a.subSequence(2, 18);
