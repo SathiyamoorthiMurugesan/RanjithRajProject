@@ -103,7 +103,6 @@
 	* 	a set of keys, 
 	* 	collection of values,
 	* 	or set of key-value mappings.
-	* Order of the Map is based on the insertion order ------
 	* Useful methods in Map interface
 	* 	size();
 	* 	isEmpty();

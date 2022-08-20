@@ -831,9 +831,10 @@ if(eachWord.equals("sathya") {
 
 String can be 
 
-String str = "text";
+String str = "alphaNumric";
 String str = "";
 Strinh str = "    ";
+String str = null;
 
 *********************************************************************
 
@@ -842,6 +843,58 @@ DAY 19
 String str = "You can use the git reset --merge command. You can also use the git merge --abort command. As always, make sure you have no uncommitted changes before you start a merge";
 
 String[] allWords = str.split(" ");
+
+if(
+for(int i=0; i<allWords.length; i++) {
+int count = 1;
+	for(int j= i+1; j<allWords.length; j++) {
+	if(allWords[i].equalsIgnoreCase(allWords[j]) {
+	count++;
+	}
+	syso("Word " +allWords[i]+ "is repeated "+count+ "times");
+	}
+	
+String str1 = str.replaceAll("You");
+
+String[] allWords = str1.split(" ");
+
+for(int i=0; i<allWords.length; i++) {
+int count = 1;
+	for(int j= i+1; j<allWords.length; j++) {
+	if(allWords[i].equalsIgnoreCase(allWords[j]) {
+	count++;
+	}
+	syso("Word " +allWords[i]+ "is repeated "+count+ "times");
+	}
+
+
+
+Collections
+
+*******************************************************************
+
+DAY 20
+
+ArrayList, String, HashSet practice 
+
+
+**********************************************************************
+
+DAY 21 
+
+HashMap learning and practice
+Thread
+Getters and Setters
+Property Reader
+
+try writing property or txt file; (try with duplicate too)
+try CSV file
+Create a file
+delete a file
+Excel reading   
+pdf reading
+
+return a class through a method
 
 
 
