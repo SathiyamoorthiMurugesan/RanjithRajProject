@@ -897,9 +897,142 @@ pdf reading
 return a class through a method
 
 
+************************************************************************
+
+DAY 22
+
+SELENIUM
+
+* Its only for web application automation
+
+BASICs for understanding selenium 
+
+* what are the actions we do on a browser
+
+browser open
+url enter
+new tab open
+tab close 
+min 
+max
+entire browser close
+scroll
+zoom
+navigate - back, forward, refresh
+
+With in application what do we do
+
+application launch - url type
+text enter
+button click
+check box click
+radio box click
+drop down
+links click
+Text read/verify
+Tab title
+Mouse hover
+double click
+Right click
+Date choose
+Drag and drop
+File upload
+Verification/Assert 
+page load speed/time
+Keyboard
+pop up
+	alert
+	tab
+	web alert like info screen
+frames
+	
+
+What is dependencies (ex: Selenium, Action, etc)
+how to download
+
+What is WebElement
+	* DOM (right click on a page and inspect or F12 or Ctrl+Shift + I)
+	* diff types of tags
+		* html
+		* div
+		* li
+		* a 
+		* select
+		* table
+			* tr 
+			* th
+			
+			
+Browsers
+* Chrome
+* Firefox
+* MS edge
+* Opera Mini
+* Internet Explorer
+* UC browser
+
+Hirarchy 
+* SearchContext Interface (findElement, findElements)
+* WebDriver Interface ( Basic methods for a browser) 
+* RemoteWebDriver Class( all basic methods are implemented here)
+* Classes ChromeDriver, FirefoxDriver, etc.. 
+	
+Diff between Chrome browser and Chrome driver 
+
+	We have to use specific driver for specific version of a browser
+	
+
+How to identify webElement
+	By using locators
+		
+
+*********************************************************************
+
+DAY 23
+
+Locators in selenium
+
+<html>
+
+acestor
+  parent
+	parent
+		child
+			child
+		child
+			child
+			child
+	parent
+	parent
+ancestro
+
+</html>
 
 
+id 
+	* do not use if it has numbers in it. 
+name
+className
+	* with more spaces 
+tagName
+linkText
+partialLinkText
+CSS selector
+xpath
 
+
+two types of xpath
+
+absolute xpath - steps 
+	* uses single slash - /html/body/header/div/nav/a[1]
+	
+relative xpath - lift
+	* uses double slash
+	* syntax
+		//tagName[@attribute = 'value']
+		
+https://www.guru99.com/xpath-selenium.html#text
+https://www.guru99.com/locators-in-selenium-ide.html
 
 
 
