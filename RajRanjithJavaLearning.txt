@@ -1036,6 +1036,13 @@ https://www.guru99.com/locators-in-selenium-ide.html
 
 
 
+******************************************************************
+
+DAY 24
+
+Browser launch and basics
+
+window Handling
 
 
 
