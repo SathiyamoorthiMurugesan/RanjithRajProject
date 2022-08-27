@@ -945,6 +945,7 @@ pop up
 	tab
 	web alert like info screen
 frames
+wait
 	
 
 What is dependencies (ex: Selenium, Action, etc)
@@ -1043,10 +1044,18 @@ DAY 24
 Browser launch and basics
 
 window Handling
+Alert
+Frames
 
+**********************************************************************
 
+DAY 25
 
+Doubts clearing
 
+Drop down - select
+
+Actions class
 
 
 

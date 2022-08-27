@@ -1,18 +1,24 @@
 package selenium;
 
+import java.time.Duration;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class BasicSel {
+public class WindowHandling {
 
-	static BasicSel basicSel = new BasicSel();
-	static WebDriver driver;
+	WebDriver driver;
 	String parentWindowHandle;
 
 	public static void main(String[] args) {
+		WindowHandling basicSel = new WindowHandling();
+		basicSel.windowHandling1();
+	}
+	
+	public void windowHandling1() {
+		WindowHandling basicSel = new WindowHandling();
 		basicSel.launchApplication("https://phptravels.com/demo");
 		System.out.println(driver.findElement(By.className("pull-left")).isDisplayed());
 
@@ -75,9 +81,20 @@ public class BasicSel {
 		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		System.out.println("Application is launch");
 		maximizeScreen();
 		parentWindowHandle = driver.getWindowHandle();
+	}
+	
+	public WebDriver launchApplicationAndReturnDriver(String url) {
+		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get(url);
+		System.out.println("Application is launch");
+		maximizeScreen();
+		parentWindowHandle = driver.getWindowHandle();
+		return driver;
 	}
 
 	public void maximizeScreen() {
