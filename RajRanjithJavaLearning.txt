@@ -946,6 +946,7 @@ pop up
 	web alert like info screen
 frames
 wait
+WebTable
 	
 
 What is dependencies (ex: Selenium, Action, etc)
@@ -1057,7 +1058,21 @@ Drop down - select
 
 Actions class
 
+Wait
 
+***********************************************************************
+
+DAY 26
+
+Robot class
+
+scrolling in selenium
+
+Excel reading using Apache POI
+
+Excel reading using fillo api
+
+WebTable
 
 
 
