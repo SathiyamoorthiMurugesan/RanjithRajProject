@@ -1076,12 +1076,156 @@ WebTable
 
 
 
+**********************************************************
 
+DAY 27
+
+Framework in Selenium
+
+Test Driven
+	* Data driven Framework
+	* Keyword driven Framework
+	* Hybrid framework
+	
+Tools - JUnit, TestNG
+
+Behaviour Driven 
+	* Cucumber along with JUnit/TestNG
+	
+
+TestNG
+
+https://www.browserstack.com/guide/testng-framework-with-selenium-automation#:~:text=TestNG%20is%20an%20open%2Dsource,stands%20for%20'Next%20Generation'.
+
+https://www.irctc.co.in/nget/train-search
+
+**********************************************************
+
+DAY 28 - 32
+TestNG and Cucumber frameworks
+
+*********************************************************
+
+DAY 33
+
+Agile
+
+
+
+Two kind of methodology
+1. Agile
+2. Water fall.
+
+Agile methodology
+
+key words 
+
+Scrum time period or Agile time period  
+	- one or two week or 15 days (Mostly its starts on Wednesday and ends with Tuesday)
+	
+an epic serves to manage tasks. It's a defined body of work that is segmented into specific tasks 
+(called “stories,” or “user stories”) based on the needs/requests of customers or end-users
+
+
+PI meeting - 
+	High level team works on who will work on which changes and those changes will be split into small parts so that, 
+	we can do that small work in one sprint time
+Sprint Planning
+	Task(User Stories) for small work is created, explained, assigned to a person, complexity will be decided
+	Here complexity is called story point
+	Basically story point is fibanocci series 1, 2, 3, 5, 8, 13.
+	
+	Inform your leave plan
+	 
+Daily Stand-Up
+	What you did yesterday
+	what are you going to do today 
+	what is your plan for tomorrow
+	Any risk on completing work
+	
+	leave details for unplanned or planned leave
+	
+Sprint Review/Demo
+	Give prove it or demo on whatever stories you did on that sprint
+
+Sprint Retrospective
+	What went well and appreciations
+	What need improvement
+	
+	
+When there is a risk in completing a story
+	E.g: Developer gives story to testing when there is only 3 days left. But in order to complete the testing you need 7 days
+In this case
+	1. No other choice you need to complete the testing in 3 days itself.
+	2. Complete as much as possible, then create a new QA(Testing) story in next sprint
+	3. Move the entire story from this sprint to next sprint
+	4. Let your scrum master to ask for extension of the current sprint
+
+*********************
+
+Teams in Scrum
+
+Company - Wipro
+client/Account - Alight
+	* One Account can have multiple projects
+Project - Bank of America 
+Scrum Team 
+	* New hire team config team
+	* New hire testing team
+	* AE team
+	
+Scrum team
+	Product Owner(PO) - like BIM BOM
+	Scrum master - Like lead but does only managerial work
+	Devs(Onshore and offshore) - 
+	Testers(Onshore and offshore)
+	Business Tester if there is any
+	
+	In my team totally 9 members
+	1. PO
+	2. SM
+	3. 1 dev in onsite
+	4. 2 dev in offshore
+	5. 3 Tester in offshore (One testing lead, one senior and me)
+	6. 1 BA
+	
+************************************************
+Screenshot in selenium
+Extent report
+background key word in cucumber
+Manual testing questions like, 
+	diff kind of testing manual
+	diff kind of testing in Automation
+	SDLC
+	STLC
+	Bug life cycle or defect life cycle
+	Diff status of a defect
+	Diff between bug and issue
+
+*****************************************
+
+There is nothing called 100% automation. 
+80% manual, 20% Automation or 50/50 or 70/30
+We dont automate all the test cases. We only automate what is necessary or important or basic or end to end(only regression scenario)
+Automation we use only for Regression (regression test cases only, we call it regression suite)
+
+Autoamtion is always on current sprint or on next sprint (N+1)
 
 
 
 	
 
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
